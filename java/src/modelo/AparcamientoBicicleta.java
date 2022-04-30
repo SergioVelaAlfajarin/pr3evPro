@@ -4,7 +4,7 @@ import exception.XMLException;
 
 import java.util.InputMismatchException;
 
-public final class AparcamientoBicicleta {
+public final class AparcamientoBicicleta implements Comparable{
 	private Integer id;
 	private String title;
 	private String tipo;
@@ -115,5 +115,21 @@ public final class AparcamientoBicicleta {
 				", lastUpdated='" + lastUpdated + '\'' +
 				", icon='" + icon + '\'' +
 				'}';
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		//numero de bicis (plazas)
+		//si es igual
+		//por calle
+		AparcamientoBicicleta apb = (AparcamientoBicicleta)o;
+
+		int resultado = plazas.compareTo(apb.plazas);
+
+		if(resultado == 0){
+			return title.compareTo(apb.title);
+		}
+
+		return resultado;
 	}
 }

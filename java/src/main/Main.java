@@ -12,7 +12,8 @@ import java.util.ArrayList;
 public class Main {
 
 	private static final String RUTA_XML = "ficheros/aparcamiento-bicicleta.xml";
-	private static final String NUEVA_RUTA_XML = "ficheros/aparcamiento.xml";
+	private static final String RUTA_XML_NUEVA = "ficheros/aparcamiento.xml";
+	private static final String RUTA_XML_INVALIDOS = "ficheros/llevar_bicis.dat";
 
 	public static void main(String[] args) {
 		LectorXML lector = new LectorXML();
@@ -20,8 +21,8 @@ public class Main {
 
 		try{
 			lector.setInformacionArchivoOrigen(RUTA_XML);
-			escritor.setInformacionArchivoDestino(NUEVA_RUTA_XML);
-
+			escritor.setInformacionArchivoDestino(RUTA_XML_NUEVA);
+			escritor.setInformacionArchivoInvalidos(RUTA_XML_INVALIDOS);
 			{
 				ArrayList<Element> listaElements = nodeListToArray(lector.getNodosRaiz());
 
