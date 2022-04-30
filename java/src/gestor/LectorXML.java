@@ -15,20 +15,14 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
-public final class GestorXML {
-	private File ficheroOrigen, ficheroDestino;
-
+public final class LectorXML {
+	private File ficheroOrigen;
 	private Element raiz;
 
 	public void setInformacionArchivoOrigen(String ruta) throws XMLException {
 		setRutaOrigen(ruta);
 		setRaiz();
 	}
-
-	public void setInformacionArchivoDestino(String ruta) throws XMLException {
-		setRutaDestino(ruta);
-	}
-
 
 	private void setRutaOrigen(String rutaOrigen) throws XMLException{
 		if(rutaOrigen == null || rutaOrigen.length() == 0){
@@ -45,21 +39,6 @@ public final class GestorXML {
 		ficheroOrigen = f;
 	}
 
-	private void setRutaDestino(String rutaDestino) throws XMLException {
-		if(rutaDestino == null || rutaDestino.length() == 0){
-			throw new XMLException("La ruta no es valida.");
-		}
-		setFicheroDestino(rutaDestino);
-	}
-
-	private void setFicheroDestino(String rutaDestino) throws XMLException {
-		File f = new File(rutaDestino);
-		if(f.exists() || f.isDirectory()){
-			throw new XMLException("La ruta Destino no es valida.");
-		}
-		ficheroDestino = f;
-	}
-
 	private void setRaiz() throws XMLException {
 		try{
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -70,18 +49,8 @@ public final class GestorXML {
 		}
 	}
 
-
 	public String getRutaOrigen() {
 		return ficheroOrigen.getAbsolutePath();
-	}
-
-	public String getRutaDestino(){
-		return ficheroDestino.getAbsolutePath();
-	}
-
-	public AparcamientoBicicleta transformElementToAparcamiento(Element n){
-		//TODO esto de aqui
-		return null;
 	}
 
 	public NodeList getNodosRaiz() throws XMLException {
@@ -97,4 +66,20 @@ public final class GestorXML {
 			throw new XMLException("El archivo XML es invalido.");
 		}
 	}
+
+
+	public AparcamientoBicicleta transformElementToAparcamiento(Element elmnt) throws XMLException {
+		String[] listaTagNames = new String[]{"id", "title", "tipo", "plazas", "anclajes", "lastUpdated","icon"};
+		String[] informacionAparcamiento = new String[listaTagNames.length];
+		for(int i=0; i<listaTagNames.length; i++){
+			NodeList nodes = elmnt.getElementsByTagName(listaTagNames[i]);
+			if(nodes.getLength() != 1){
+				throw new XMLException("La estrucutra del archivo xml es incorrecta.");
+			}
+			informacionAparcamiento[i] = nodes.item(0).getTextContent();
+		}
+		return new AparcamientoBicicleta(informacionAparcamiento);
+	}
+
+
 }

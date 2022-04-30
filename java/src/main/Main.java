@@ -1,7 +1,8 @@
 package main;
 
 import exception.XMLException;
-import gestor.GestorXML;
+import gestor.EscritorXML;
+import gestor.LectorXML;
 import modelo.AparcamientoBicicleta;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -14,26 +15,23 @@ public class Main {
 	private static final String NUEVA_RUTA_XML = "ficheros/aparcamiento.xml";
 
 	public static void main(String[] args) {
-		GestorXML gestor = new GestorXML();
+		LectorXML lector = new LectorXML();
+		EscritorXML escritor = new EscritorXML();
 
 		try{
-			gestor.setInformacionArchivoOrigen(RUTA_XML);
-			gestor.setInformacionArchivoDestino(NUEVA_RUTA_XML);
+			lector.setInformacionArchivoOrigen(RUTA_XML);
+			escritor.setInformacionArchivoDestino(NUEVA_RUTA_XML);
 
 			{
-				ArrayList<Element> listaElements = nodeListToArray(gestor.getNodosRaiz());
-				ArrayList<AparcamientoBicicleta> listaAparcamientos = new ArrayList<>();
+				ArrayList<Element> listaElements = nodeListToArray(lector.getNodosRaiz());
 
 				for(Element el: listaElements){
-					listaAparcamientos.add(gestor.transformElementToAparcamiento(el));
+					AparcamientoBicicleta apb = lector.transformElementToAparcamiento(el);
+					escritor.addAparcamientoBicicleta(apb);
 				}
 
-
+				System.out.println(escritor.getListaAparcamientos());
 			}
-
-			System.out.println(gestor.getRutaOrigen());
-			System.out.println(gestor.getRutaDestino());
-
 		}catch(XMLException e){
 			System.out.println(e.getMessage());
 		}
