@@ -14,25 +14,21 @@ public class Main {
 	private static final String RUTA_XML = "ficheros/aparcamiento-bicicleta.xml";
 	private static final String RUTA_XML_NUEVA = "ficheros/aparcamiento.xml";
 	private static final String RUTA_XML_INVALIDOS = "ficheros/llevar_bicis.dat";
+	private static final String NODOS_PRINCIPALES = "aparcamiento-bicicleta";
 
 	public static void main(String[] args) {
 		LectorXML lector = new LectorXML();
 		EscritorXML escritor = new EscritorXML();
 
 		try{
-			lector.setInformacionArchivoOrigen(RUTA_XML);
-			escritor.setInformacionArchivoDestino(RUTA_XML_NUEVA);
-			escritor.setInformacionArchivoInvalidos(RUTA_XML_INVALIDOS);
-			{
-				ArrayList<Element> listaElements = nodeListToArray(lector.getNodosRaiz());
-
-				for(Element el: listaElements){
-					AparcamientoBicicleta apb = lector.transformElementToAparcamiento(el);
-					escritor.addAparcamientoBicicleta(apb);
-				}
-
-				System.out.println(escritor.getListaAparcamientos());
+			lector.leerArchivoXML(RUTA_XML);
+			NodeList nodes = lector.getNodosPrincipales(NODOS_PRINCIPALES);
+			ArrayList<Element> listaElements = nodeListToArray(nodes);
+			for(Element el: listaElements){
+				AparcamientoBicicleta apb = lector.transformElementToAparcamiento(el);
+				escritor.addAparcamientoBicicleta(apb);
 			}
+			escritor.escribeAparcamientosEnArchivo(RUTA_XML_NUEVA,RUTA_XML_INVALIDOS);
 		}catch(XMLException e){
 			System.out.println(e.getMessage());
 		}

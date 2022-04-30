@@ -19,7 +19,7 @@ public final class LectorXML {
 	private File ficheroOrigen;
 	private Element raiz;
 
-	public void setInformacionArchivoOrigen(String ruta) throws XMLException {
+	public void leerArchivoXML(String ruta) throws XMLException {
 		setRutaOrigen(ruta);
 		setRaiz();
 	}
@@ -53,8 +53,8 @@ public final class LectorXML {
 		return ficheroOrigen.getAbsolutePath();
 	}
 
-	public NodeList getNodosRaiz() throws XMLException {
-		NodeList nl = raiz.getElementsByTagName("aparcamiento-bicicleta");
+	public NodeList getNodosPrincipales(String nodosPrincipales) throws XMLException {
+		NodeList nl = raiz.getElementsByTagName(nodosPrincipales);
 		compruebaLongitudValida(nl);
 		return nl;
 	}
@@ -66,7 +66,6 @@ public final class LectorXML {
 			throw new XMLException("El archivo XML es invalido.");
 		}
 	}
-
 
 	public AparcamientoBicicleta transformElementToAparcamiento(Element elmnt) throws XMLException {
 		String[] listaTagNames = new String[]{"id", "title", "tipo", "plazas", "anclajes", "lastUpdated","icon"};

@@ -4,7 +4,7 @@ import exception.XMLException;
 
 import java.util.InputMismatchException;
 
-public final class AparcamientoBicicleta implements Comparable{
+public final class AparcamientoBicicleta implements Comparable<AparcamientoBicicleta>{
 	private Integer id;
 	private String title;
 	private String tipo;
@@ -20,7 +20,6 @@ public final class AparcamientoBicicleta implements Comparable{
 		init(info);
 	}
 
-
 	private void init(String[] info) throws XMLException {
 		try{
 			setId(info[0]);
@@ -34,6 +33,7 @@ public final class AparcamientoBicicleta implements Comparable{
 			throw new XMLException("Ha habido un problema al crear los objetos AparcamientoBicicleta.");
 		}
 	}
+
 
 	private void setId(String id) throws InputMismatchException{
 		if(id == null || id.trim().length() == 0){
@@ -104,6 +104,7 @@ public final class AparcamientoBicicleta implements Comparable{
 		return icon;
 	}
 
+
 	@Override
 	public String toString() {
 		return "AparcamientoBicicleta{" +
@@ -118,16 +119,11 @@ public final class AparcamientoBicicleta implements Comparable{
 	}
 
 	@Override
-	public int compareTo(Object o) {
-		//numero de bicis (plazas)
-		//si es igual
-		//por calle
-		AparcamientoBicicleta apb = (AparcamientoBicicleta)o;
-
-		int resultado = plazas.compareTo(apb.plazas);
+	public int compareTo(AparcamientoBicicleta o) {
+		int resultado = plazas.compareTo(o.plazas);
 
 		if(resultado == 0){
-			return title.compareTo(apb.title);
+			return title.compareTo(o.title);
 		}
 
 		return resultado;
