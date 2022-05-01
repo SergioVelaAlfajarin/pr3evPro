@@ -7,8 +7,8 @@
             <id>13</id>
             <title>IES Pilar Lorengar</title>
             <tipo>Cerrado</tipo>
-            <plazas>16</plazas>
-            <anclajes>8</anclajes>
+            <plazas>0</plazas>
+            <anclajes>0</anclajes>
             <lastUpdated>2022-04-26T23:06:25Z</lastUpdated>
             <geometry>
                 <type>Point</type>
@@ -59,8 +59,8 @@
             <id>17</id>
             <title>Plaza España SJN</title>
             <tipo>Abierto</tipo>
-            <plazas>6</plazas>
-            <anclajes>3</anclajes>
+            <plazas>0</plazas>
+            <anclajes>0</anclajes>
             <lastUpdated>2022-04-26T23:06:25Z</lastUpdated>
             <geometry>
                 <type>Point</type>
@@ -124,7 +124,7 @@
             <id>22</id>
             <title>Parque</title>
             <tipo>Abierto</tipo>
-            <plazas>10</plazas>
+            <plazas>0</plazas>
             <anclajes>5</anclajes>
             <lastUpdated>2022-04-26T23:06:25Z</lastUpdated>
             <geometry>
@@ -176,7 +176,7 @@
             <id>789</id>
             <title>Residencia Pignatelli</title>
             <tipo>Abierto</tipo>
-            <plazas>8</plazas>
+            <plazas>0</plazas>
             <anclajes>7</anclajes>
             <lastUpdated>2022-04-26T23:06:41Z</lastUpdated>
             <geometry>
@@ -189,7 +189,7 @@
             <id>118</id>
             <title>C/ Rio Guadalope</title>
             <tipo>Abierto</tipo>
-            <plazas>12</plazas>
+            <plazas>0</plazas>
             <anclajes>6</anclajes>
             <lastUpdated>2022-04-26T23:06:26Z</lastUpdated>
             <geometry>

@@ -19,11 +19,6 @@
         <bicis>6</bicis>
         <anclajes>3</anclajes>
     </estacion>
-    <estacion id="17">
-        <calle>Plaza España SJN</calle>
-        <bicis>6</bicis>
-        <anclajes>3</anclajes>
-    </estacion>
     <estacion id="366">
         <calle>Expo Parque del Agua</calle>
         <bicis>8</bicis>
@@ -33,11 +28,6 @@
         <calle>Parque Del Agua</calle>
         <bicis>8</bicis>
         <anclajes>2</anclajes>
-    </estacion>
-    <estacion id="789">
-        <calle>Residencia Pignatelli</calle>
-        <bicis>8</bicis>
-        <anclajes>7</anclajes>
     </estacion>
     <estacion id="777">
         <calle>CDM El Cascajo</calle>
@@ -60,11 +50,6 @@
         <anclajes>5</anclajes>
     </estacion>
     <estacion id="21">
-        <calle>Parque</calle>
-        <bicis>10</bicis>
-        <anclajes>5</anclajes>
-    </estacion>
-    <estacion id="22">
         <calle>Parque</calle>
         <bicis>10</bicis>
         <anclajes>5</anclajes>
@@ -101,11 +86,6 @@
     </estacion>
     <estacion id="116">
         <calle>C/ Rio Esera</calle>
-        <bicis>12</bicis>
-        <anclajes>6</anclajes>
-    </estacion>
-    <estacion id="118">
-        <calle>C/ Rio Guadalope</calle>
         <bicis>12</bicis>
         <anclajes>6</anclajes>
     </estacion>
@@ -176,11 +156,6 @@
     </estacion>
     <estacion id="113">
         <calle>Colegio Publico Cortes de Aragón</calle>
-        <bicis>16</bicis>
-        <anclajes>8</anclajes>
-    </estacion>
-    <estacion id="13">
-        <calle>IES Pilar Lorengar</calle>
         <bicis>16</bicis>
         <anclajes>8</anclajes>
     </estacion>

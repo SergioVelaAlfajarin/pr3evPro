@@ -121,11 +121,12 @@ public final class AparcamientoBicicleta implements Comparable<AparcamientoBicic
 	@Override
 	public int compareTo(AparcamientoBicicleta o) {
 		int resultado = plazas.compareTo(o.plazas);
-
 		if(resultado == 0){
+			if(title == null || o.title == null){
+				return 0;
+			}
 			return title.compareTo(o.title);
 		}
-
 		return resultado;
 	}
 }
