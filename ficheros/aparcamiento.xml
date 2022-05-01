@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?><estaciones>
+    <estacion id="552">
+        <calle>CEIP ANTONIO BELTRAN</calle>
+        <bicis>6</bicis>
+        <anclajes>3</anclajes>
+    </estacion>
+    <estacion id="114">
+        <calle>Federaciones Deportivas Aragonesas</calle>
+        <bicis>6</bicis>
+        <anclajes>1</anclajes>
+    </estacion>
+    <estacion id="922">
+        <calle>Paseo Longares</calle>
+        <bicis>6</bicis>
+        <anclajes>3</anclajes>
+    </estacion>
+    <estacion id="18">
+        <calle>Plaza España S/N</calle>
+        <bicis>6</bicis>
+        <anclajes>3</anclajes>
+    </estacion>
+    <estacion id="17">
+        <calle>Plaza España SJN</calle>
+        <bicis>6</bicis>
+        <anclajes>3</anclajes>
+    </estacion>
+    <estacion id="366">
+        <calle>Expo Parque del Agua</calle>
+        <bicis>8</bicis>
+        <anclajes>2</anclajes>
+    </estacion>
+    <estacion id="368">
+        <calle>Parque Del Agua</calle>
+        <bicis>8</bicis>
+        <anclajes>2</anclajes>
+    </estacion>
+    <estacion id="789">
+        <calle>Residencia Pignatelli</calle>
+        <bicis>8</bicis>
+        <anclajes>7</anclajes>
+    </estacion>
+    <estacion id="777">
+        <calle>CDM El Cascajo</calle>
+        <bicis>10</bicis>
+        <anclajes>5</anclajes>
+    </estacion>
+    <estacion id="19">
+        <calle>Campo de Futbol San Juan</calle>
+        <bicis>10</bicis>
+        <anclajes>5</anclajes>
+    </estacion>
+    <estacion id="544">
+        <calle>Colegio Cristo Rey Escolapios</calle>
+        <bicis>10</bicis>
+        <anclajes>5</anclajes>
+    </estacion>
+    <estacion id="456">
+        <calle>Conservarorio Profesional de Musica</calle>
+        <bicis>10</bicis>
+        <anclajes>5</anclajes>
+    </estacion>
+    <estacion id="21">
+        <calle>Parque</calle>
+        <bicis>10</bicis>
+        <anclajes>5</anclajes>
+    </estacion>
+    <estacion id="22">
+        <calle>Parque</calle>
+        <bicis>10</bicis>
+        <anclajes>5</anclajes>
+    </estacion>
+    <estacion id="782">
+        <calle>Plaza Emperador</calle>
+        <bicis>10</bicis>
+        <anclajes>5</anclajes>
+    </estacion>
+    <estacion id="16">
+        <calle>Sin Nombre</calle>
+        <bicis>10</bicis>
+        <anclajes>5</anclajes>
+    </estacion>
+    <estacion id="124">
+        <calle>Centro Civico La Almozara</calle>
+        <bicis>11</bicis>
+        <anclajes>12</anclajes>
+    </estacion>
+    <estacion id="20">
+        <calle>Centro Civico esquinas del Psiquiátrico</calle>
+        <bicis>11</bicis>
+        <anclajes>10</anclajes>
+    </estacion>
+    <estacion id="457">
+        <calle>Bar Parque</calle>
+        <bicis>12</bicis>
+        <anclajes>6</anclajes>
+    </estacion>
+    <estacion id="119">
+        <calle>C/ La almunia de Doña Godina con Avenida Almozara</calle>
+        <bicis>12</bicis>
+        <anclajes>6</anclajes>
+    </estacion>
+    <estacion id="116">
+        <calle>C/ Rio Esera</calle>
+        <bicis>12</bicis>
+        <anclajes>6</anclajes>
+    </estacion>
+    <estacion id="118">
+        <calle>C/ Rio Guadalope</calle>
+        <bicis>12</bicis>
+        <anclajes>6</anclajes>
+    </estacion>
+    <estacion id="548">
+        <calle>CEIP JERÓNIMO BLANCAS 2015</calle>
+        <bicis>12</bicis>
+        <anclajes>6</anclajes>
+    </estacion>
+    <estacion id="14">
+        <calle>Colegio Don Bosco</calle>
+        <bicis>12</bicis>
+        <anclajes>6</anclajes>
+    </estacion>
+    <estacion id="120">
+        <calle>Colegio Publico Jeronimo Zurita</calle>
+        <bicis>12</bicis>
+        <anclajes>6</anclajes>
+    </estacion>
+    <estacion id="745">
+        <calle>Deutsche bank</calle>
+        <bicis>12</bicis>
+        <anclajes>6</anclajes>
+    </estacion>
+    <estacion id="365">
+        <calle>Expo Torre Del Agua</calle>
+        <bicis>12</bicis>
+        <anclajes>3</anclajes>
+    </estacion>
+    <estacion id="453">
+        <calle>Fray Julian Garces con Boente</calle>
+        <bicis>12</bicis>
+        <anclajes>6</anclajes>
+    </estacion>
+    <estacion id="455">
+        <calle>Avda. America 55</calle>
+        <bicis>14</bicis>
+        <anclajes>7</anclajes>
+    </estacion>
+    <estacion id="551">
+        <calle>CEIP ANTONIO BELTRAN</calle>
+        <bicis>14</bicis>
+        <anclajes>7</anclajes>
+    </estacion>
+    <estacion id="540">
+        <calle>CEPI ROSALES DEL CANAL</calle>
+        <bicis>14</bicis>
+        <anclajes>7</anclajes>
+    </estacion>
+    <estacion id="454">
+        <calle>Fray Julian Garces con Parque</calle>
+        <bicis>14</bicis>
+        <anclajes>7</anclajes>
+    </estacion>
+    <estacion id="778">
+        <calle>Hospital Royo Villanova</calle>
+        <bicis>14</bicis>
+        <anclajes>7</anclajes>
+    </estacion>
+    <estacion id="363">
+        <calle>Expo Parque del Agua</calle>
+        <bicis>15</bicis>
+        <anclajes>15</anclajes>
+    </estacion>
+    <estacion id="15">
+        <calle>Campo de Futbol Vadorrey</calle>
+        <bicis>16</bicis>
+        <anclajes>8</anclajes>
+    </estacion>
+    <estacion id="113">
+        <calle>Colegio Publico Cortes de Aragón</calle>
+        <bicis>16</bicis>
+        <anclajes>8</anclajes>
+    </estacion>
+    <estacion id="13">
+        <calle>IES Pilar Lorengar</calle>
+        <bicis>16</bicis>
+        <anclajes>8</anclajes>
+    </estacion>
+    <estacion id="367">
+        <calle>Expo Parque Del Agua</calle>
+        <bicis>18</bicis>
+        <anclajes>18</anclajes>
+    </estacion>
+    <estacion id="121">
+        <calle>C.D.M. La Almozara</calle>
+        <bicis>20</bicis>
+        <anclajes>10</anclajes>
+    </estacion>
+    <estacion id="543">
+        <calle>CEIP CESAR AUGUSTO</calle>
+        <bicis>20</bicis>
+        <anclajes>10</anclajes>
+    </estacion>
+    <estacion id="542">
+        <calle>CEPI ESCUELAS PÍAS SANTA INGRACIA</calle>
+        <bicis>20</bicis>
+        <anclajes>10</anclajes>
+    </estacion>
+    <estacion id="461">
+        <calle>Conservatorio Superior de Musica</calle>
+        <bicis>20</bicis>
+        <anclajes>10</anclajes>
+    </estacion>
+    <estacion id="459">
+        <calle>Escuela de Arte</calle>
+        <bicis>20</bicis>
+        <anclajes>10</anclajes>
+    </estacion>
+    <estacion id="370">
+        <calle>Expo Parque Del Agua</calle>
+        <bicis>20</bicis>
+        <anclajes>5</anclajes>
+    </estacion>
+    <estacion id="547">
+        <calle>CEIP JOSEFA AMAR Y BORBON</calle>
+        <bicis>22</bicis>
+        <anclajes>11</anclajes>
+    </estacion>
+    <estacion id="538">
+        <calle>CEPI AGUSTINA DE ARAGÓN</calle>
+        <bicis>28</bicis>
+        <anclajes>14</anclajes>
+    </estacion>
+    <estacion id="536">
+        <calle>CEIP CATALINA DE ARAGÓN</calle>
+        <bicis>40</bicis>
+        <anclajes>20</anclajes>
+    </estacion>
+    <estacion id="541">
+        <calle>CEIP ROSALES DEL CANAL</calle>
+        <bicis>42</bicis>
+        <anclajes>21</anclajes>
+    </estacion>
+    <estacion id="372">
+        <calle>LLegadas Estacion Intermodal Renfe</calle>
+        <bicis>50</bicis>
+        <anclajes>25</anclajes>
+    </estacion>
+    <estacion id="537">
+        <calle>CEPI AGUSTINA DE ARAGÓN</calle>
+        <bicis>52</bicis>
+        <anclajes>26</anclajes>
+    </estacion>
+</estaciones>
