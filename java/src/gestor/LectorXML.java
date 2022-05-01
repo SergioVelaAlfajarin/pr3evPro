@@ -79,6 +79,4 @@ public final class LectorXML {
 		}
 		return new AparcamientoBicicleta(informacionAparcamiento);
 	}
-
-
 }

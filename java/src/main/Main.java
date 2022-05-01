@@ -14,6 +14,7 @@ public class Main {
 	private static final String RUTA_XML = "ficheros/aparcamiento-bicicleta.xml";
 	private static final String RUTA_XML_NUEVA = "ficheros/aparcamiento.xml";
 	private static final String RUTA_XML_INVALIDOS = "ficheros/llevar_bicis.dat";
+
 	private static final String NODOS_PRINCIPALES = "aparcamiento-bicicleta";
 
 	public static void main(String[] args) {
