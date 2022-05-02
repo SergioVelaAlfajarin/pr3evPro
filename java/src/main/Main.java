@@ -12,11 +12,11 @@ import org.w3c.dom.NodeList;
 import java.util.ArrayList;
 
 public class Main {
-
 	private static final String RUTA_XML = "ficheros/aparcamiento-bicicleta.xml";
 	private static final String RUTA_XML_NUEVA = "ficheros/aparcamiento.xml";
 	private static final String RUTA_XML_INVALIDOS = "ficheros/llevar_bicis.dat";
 	private static final String RUTA_LOG = "ficheros/log.txt";
+
 	/**
 	 * Metodo main
 	 * <hr/>
@@ -29,24 +29,26 @@ public class Main {
 		EscritorXML escritor = new EscritorXML();
 
 		try{
-			//unica linea que puede lanzar LogException
-			Logger.init(RUTA_LOG);
+			Logger.init(RUTA_LOG); //unica linea que puede lanzar LogException
 			lector.leerArchivoXML(RUTA_XML);
 
 			//lee nodos y los agrega a la coleccion
 			NodeList nodes = lector.getNodosPrincipales();
+			Logger.print("Transformando NodeList en Array de elements...");
 			ArrayList<Element> listaElements = nodeListToArray(nodes);
 			Logger.print("Lista de nodos transformada correctamente a array.");
 			Logger.print("Iterando y transformando en Objeto...");
 			for(Element el: listaElements){
 				AparcamientoBicicleta apb = lector.transformElementToAparcamiento(el);
 				escritor.addAparcamientoBicicleta(apb);
+				Logger.print("AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:" + apb.getId());
 			}
 			Logger.print("Array de elements Transformado correctamente.");
 
 			//escribe los aparcamientos de la coleccion
 			escritor.escribeAparcamientosEnArchivo(RUTA_XML_NUEVA,RUTA_XML_INVALIDOS);
 			Logger.print("Aparcamientos Escritos. Ejecucion terminada.");
+			System.out.println("Ejecucion terminada. Ver detalles en " + RUTA_LOG);
 		}catch(XMLException e){
 			Logger.print(e.getMessage());
 			Logger.close();

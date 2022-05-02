@@ -28,10 +28,9 @@ public class EscritorXML {
 	 */
 	public void addAparcamientoBicicleta(AparcamientoBicicleta apb) throws XMLException {
 		if(apb == null){
-			throw new XMLException("No puedes agregar aparcamientos nulos.");
+			throw new XMLException("No puedes agregar aparcamientos nulos. Codigo Error: 0031xESAD");
 		}
 		listaAparcamientosValidos.add(apb);
-		Logger.print("AparcamientoBicleta añadido correctamente al array de EscritorXML Id:" + apb.getId());
 	}
 
 	/**
@@ -45,13 +44,15 @@ public class EscritorXML {
 	 * @throws XMLException Si ha habido un problema con la separacion de arrays o la escritura de los mismos.
 	 */
 	public void escribeAparcamientosEnArchivo(String rutaXmlNueva, String rutaXmlInvalidos) throws XMLException {
-		Logger.print("Separando arrays.");
+		Logger.print("Separando arrays...");
 		separaArrays();
 		Logger.print("Arrays separados.");
 		Logger.print("Escribiendo Aparcamientos validos...");
 		escribeAparcamientosValidos(rutaXmlNueva);
+		Logger.print("Terminada la creacion del archivo de validos.");
 		Logger.print("Escribiendo Aparcamientos invalidos...");
 		escribeAparcamientosInvalidos(rutaXmlInvalidos);
+		Logger.print("Terminada la creacion y escritura del archivo de invalidos.");
 	}
 
 	/**
@@ -76,7 +77,7 @@ public class EscritorXML {
 				Logger.print("Aparcamiento valido. Plazas: " + plazas);
 			}
 		}
-		Logger.print("Ordenando lista de aparcamientos validos.");
+		Logger.print("Ordenando lista de aparcamientos validos...");
 		sortListaAparcamientos();
 		Logger.print("Lista ordenada.");
 	}
@@ -92,7 +93,7 @@ public class EscritorXML {
 		try{
 			Collections.sort(listaAparcamientosValidos);
 		}catch(Exception ex){
-			throw new XMLException("Error al ordenar la coleccion. Posibles valores nulos.");
+			throw new XMLException("Error al ordenar la coleccion. Posibles valores nulos. Codigo Error: 0096xESSO");
 		}
 	}
 
@@ -107,6 +108,7 @@ public class EscritorXML {
 	 */
 	private void escribeAparcamientosValidos(String rutaXmlNueva) throws XMLException {
 		try {
+			Logger.print("Creando archivo destino...");
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			DOMImplementation generador = db.getDOMImplementation();
@@ -115,13 +117,17 @@ public class EscritorXML {
 			Document miDoc = generador.createDocument(null, "estaciones", null);
 			miDoc.setXmlVersion("1.0");
 			miDoc.setXmlStandalone(true);
+
+			Logger.print("Archivo creado. Obteniendo Raiz...");
 			Element raiz = miDoc.getDocumentElement();
 
+			Logger.print("Raiz obtenida. Rellenando informacion del array de objetos...");
 			//rellena informacion donde corresponda
 			for(AparcamientoBicicleta apb: listaAparcamientosValidos){
 				rellenaInformacionXML(apb, miDoc, raiz);
 			}
 
+			Logger.print("Informacion rellenada. Terminando creacion del archivo...");
 			//Creamos el archivo fuente que queremos guardar y indicamos donde queremos guardar el archivo
 			Source fuente = new DOMSource(miDoc);
 			Result resultado = new StreamResult(setRutaDestino(rutaXmlNueva));
@@ -132,13 +138,13 @@ public class EscritorXML {
 			transform.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
 			transform.transform(fuente, resultado);
 		} catch (ParserConfigurationException ex) {
-			throw new XMLException("Imposible generar el documento.");
+			throw new XMLException("Imposible generar el documento. Codigo Error: 0141xESVA");
 		} catch (TransformerConfigurationException ex) {
-			throw new XMLException("Error con el documento.");
+			throw new XMLException("Error con el documento. Codigo Error: 0142xESVA");
 		} catch (TransformerException ex) {
-			throw new XMLException("Error guardando el fichero.");
+			throw new XMLException("Error guardando el fichero. Codigo Error: 0145xESVA");
 		} catch (IOException e) {
-			throw new XMLException("Ha ocurrido un error inesperado.");
+			throw new XMLException("Ha ocurrido un error inesperado. Codigo Error: 0147xESVA");
 		}
 	}
 
@@ -152,6 +158,7 @@ public class EscritorXML {
 	 * @param raiz raiz del documento.
 	 */
 	private void rellenaInformacionXML(AparcamientoBicicleta apb, Document miDoc, Element raiz) {
+		Logger.print("Rellenando informacion de Aparcamiento ID: " + apb.getId());
 		//Creamos todos los elementos necesarios
 		Element etEstacion = miDoc.createElement("estacion");
 		Element etCalle = miDoc.createElement("calle");
@@ -196,12 +203,15 @@ public class EscritorXML {
 	 * @throws XMLException si ocurre algun error en la escritura del archivo.
 	 */
 	private void escribeAparcamientosInvalidos(String rutaXmlInvalidos) throws XMLException {
+		Logger.print("Comprobando si los aparcamientos ya han sido escritos en el archivo...");
 		compruebaSiExisteEnArchivo(rutaXmlInvalidos);
 
 		try (DataOutputStream dos = new DataOutputStream(
 				new FileOutputStream(rutaXmlInvalidos, true))
 		){
+			Logger.print("Creado archivo de invalidos.");
 			for(AparcamientoBicicleta apb: listaAparcamientosInvalidos){
+				Logger.print("Escribiendo aparcamiento con ID: " +  apb.getId());
 				String cadena = String.format(
 						"AparcamientoBicicleta {ID:%s, Date:%s}%n",
 						apb.getId(),
@@ -211,7 +221,7 @@ public class EscritorXML {
 				dos.flush();
 			}
 		} catch (IOException e) {
-			throw new XMLException("Error al escribir el fichero de invalidos.");
+			throw new XMLException("Error al escribir el fichero de invalidos. Codigo Error: 0224xESIN");
 		}
 	}
 
@@ -229,13 +239,29 @@ public class EscritorXML {
 			while(sc.hasNext()){
 				String linea = sc.nextLine();
 				Integer idLinea = extraeIDLinea(linea);
-
-				listaAparcamientosInvalidos.removeIf(apb -> idLinea.equals(apb.getId()));
+				Logger.print("Analizando Aparcamiento con id: " + idLinea);
+				if(recorreYeliminaInvalidos(idLinea)){
+					Logger.print("Aparcamiento ya escrito. Eliminandolo del array.");
+				}else{
+					Logger.print("Aparcamiento con id:" + idLinea + " no se encuentra en el array.");
+				}
 			}
+			Logger.print("Comprobacion terminada");
 		} catch (Exception e){
-			//throw new XMLException("No se ha podido encontrar el archivo de invalidos");
-			//logger
+			Logger.print("El Archivo de invalidos no existe. Ignorando Comprobacion.");
 		}
+	}
+
+	private boolean recorreYeliminaInvalidos(Integer idLinea) {
+		ListIterator<AparcamientoBicicleta> it = listaAparcamientosInvalidos.listIterator();
+		while(it.hasNext()){
+			AparcamientoBicicleta apb = it.next();
+			if(apb.getId().equals(idLinea)){
+				it.remove();
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/**
@@ -253,13 +279,13 @@ public class EscritorXML {
 		String[] lineaSeparada = l.split(":");
 		int posicionComa = obtenerPosicionComa(lineaSeparada[1]);
 		if(posicionComa <= 0){
-			throw new XMLException("Error al leer el archivo de invalidos.");
+			throw new XMLException("Error al leer el archivo de invalidos. Codigo Error: 0282xESEX");
 		}
 		String id = lineaSeparada[1].substring(0,posicionComa);
 		try{
 			return Integer.parseInt(id);
 		}catch (NumberFormatException ex){
-			throw new XMLException("Error al leer el archivo de invalidos");
+			throw new XMLException("Error al leer el archivo de invalidos. Codigo Error: 0288xESEX");
 		}
 	}
 
@@ -289,7 +315,7 @@ public class EscritorXML {
 	 */
 	private File setRutaDestino(String rutaDestino) throws XMLException {
 		if(rutaDestino == null || rutaDestino.length() == 0){
-			throw new XMLException("La ruta no es valida.");
+			throw new XMLException("La ruta no es valida. Codigo Error: 0318xESRU");
 		}
 		return setFicheroDestino(rutaDestino);
 	}
@@ -306,7 +332,7 @@ public class EscritorXML {
 	private File setFicheroDestino(String rutaDestino) throws XMLException {
 		File f = new File(rutaDestino);
 		if(f.isDirectory()){
-			throw new XMLException("La ruta Destino no es valida.");
+			throw new XMLException("La ruta Destino no es valida. Codigo Error: 0335xESFI");
 		}
 		return f;
 	}

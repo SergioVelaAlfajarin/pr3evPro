@@ -30,7 +30,7 @@ public final class LectorXML {
 	 */
 	public void leerArchivoXML(String ruta) throws XMLException {
 		setRutaOrigen(ruta);
-		Logger.print("Fichero abierto correctamente.");
+		Logger.print("Fichero abierto XML correctamente. Ruta: " + ficheroOrigen.getAbsolutePath());
 		setRaiz();
 		Logger.print("Raiz obtenida correctamente.");
 	}
@@ -46,7 +46,7 @@ public final class LectorXML {
 	 */
 	private void setRutaOrigen(String rutaOrigen) throws XMLException{
 		if(rutaOrigen == null || rutaOrigen.length() == 0){
-			throw new XMLException("La ruta no es valida.");
+			throw new XMLException("La ruta no es valida. Codigo Error: 0049xLERU");
 		}
 		setFicheroOrigen(rutaOrigen);
 	}
@@ -62,7 +62,7 @@ public final class LectorXML {
 	private void setFicheroOrigen(String rutaOrigen)throws XMLException {
 		File f = new File(rutaOrigen);
 		if(!f.exists() || f.isDirectory()){
-			throw new XMLException("La ruta es un directorio o no existe.");
+			throw new XMLException("La ruta es un directorio o no existe. Codigo Error: 0065xLEFI");
 		}
 		ficheroOrigen = f;
 	}
@@ -80,11 +80,11 @@ public final class LectorXML {
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			raiz = db.parse(ficheroOrigen).getDocumentElement();
 		} catch (IOException ex) {
-			throw new XMLException("Error al leer el archivo XML");
+			throw new XMLException("Error al leer el archivo XML. Codigo Error: 0083xLERA");
 		} catch (ParserConfigurationException ex) {
-			throw new XMLException("Error al leer el archivo XML");
+			throw new XMLException("Error al leer el archivo XML. Codigo Error: 0085xLERA");
 		} catch (SAXException ex) {
-			throw new XMLException("Error al leer el archivo XML");
+			throw new XMLException("Error al leer el archivo XML. Codigo Error: 0087xLERA");
 		}
 	}
 
@@ -100,7 +100,7 @@ public final class LectorXML {
 	public NodeList getNodosPrincipales() throws XMLException {
 		NodeList nl = raiz.getElementsByTagName("aparcamiento-bicicleta");
 		compruebaLongitudValida(nl);
-		Logger.print("Cantidad de nodos validada correctamente");
+		Logger.print("Cantidad de nodos validada correctamente.");
 		return nl;
 	}
 
@@ -125,10 +125,10 @@ public final class LectorXML {
 			Logger.print("Comprobando validez. Requerido: " + rows);
 
 			if(!rows.equals(longitud)){
-				throw new XMLException("El archivo XML es invalido.");
+				throw new XMLException("El archivo XML es invalido. Codigo Error: 0128xLECO");
 			}
 		}catch(NumberFormatException e){
-			throw new XMLException("Ha ocurrido un problema al analizar el documento.");
+			throw new XMLException("Ha ocurrido un problema al analizar el documento. Codigo Error: 0131xLECO");
 		}
 	}
 
@@ -161,8 +161,6 @@ public final class LectorXML {
 				}
 			}
 		}
-		AparcamientoBicicleta apb = new AparcamientoBicicleta(informacionAparcamiento);
-		Logger.print("Transformado correctamente.");
-		return apb;
+		return new AparcamientoBicicleta(informacionAparcamiento);
 	}
 }

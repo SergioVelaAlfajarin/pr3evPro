@@ -24,7 +24,7 @@ public final class AparcamientoBicicleta implements Comparable<AparcamientoBicic
 	 */
 	public AparcamientoBicicleta(String[] info) throws XMLException {
 		if(info.length != 7){
-			throw new XMLException("Ha habido un problema al crear los objetos AparcamientoBicicleta.");
+			throw new XMLException("Ha habido un problema al crear los objetos AparcamientoBicicleta. Codigo Error: 0027xAPBC");
 		}
 		init(info);
 	}
@@ -47,7 +47,7 @@ public final class AparcamientoBicicleta implements Comparable<AparcamientoBicic
 			setLastUpdated(info[5]);
 			setIcon(info[6]);
 		}catch(InputMismatchException e){
-			throw new XMLException("Ha habido un problema al crear los objetos AparcamientoBicicleta.");
+			throw new XMLException("Ha habido un problema al crear los objetos AparcamientoBicicleta. Codigo Error: 0050xAPIN");
 		}
 	}
 

@@ -204,6 +204,11 @@
         <bicis>28</bicis>
         <anclajes>14</anclajes>
     </estacion>
+    <estacion id="118">
+        <calle>C/ Rio Guadalope</calle>
+        <bicis>32</bicis>
+        <anclajes>6</anclajes>
+    </estacion>
     <estacion id="536">
         <calle>CEIP CATALINA DE ARAGÓN</calle>
         <bicis>40</bicis>

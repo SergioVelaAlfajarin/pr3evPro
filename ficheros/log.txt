@@ -1,267 +1,277 @@
-[2022-05-02T13:46:36.170054600] -> Comienza la ejecucion
-[2022-05-02T13:46:36.183788900] -> Se ha inicializado el logger. Ruta: C:\Users\fdezv\My Drive\workspaces\java\IntelliJWS\pr3evPro\ficheros\log.txt
-[2022-05-02T13:46:36.184290] -> Fichero abierto correctamente.
-[2022-05-02T13:46:36.271642900] -> Raiz obtenida correctamente.
-[2022-05-02T13:46:36.271642900] -> Nodos extraidos. Cantidad: 50
-[2022-05-02T13:46:36.271642900] -> Comprobando validez. Requerido: 50
-[2022-05-02T13:46:36.271642900] -> Cantidad de nodos validada correctamente
-[2022-05-02T13:46:36.271642900] -> Lista de nodos transformada correctamente a array.
-[2022-05-02T13:46:36.271642900] -> Iterando y transformando en Objeto...
-[2022-05-02T13:46:36.271642900] -> Transformando aparcamiento con id: 13
-[2022-05-02T13:46:36.271642900] -> Transformado correctamente.
-[2022-05-02T13:46:36.271642900] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:13
-[2022-05-02T13:46:36.271642900] -> Transformando aparcamiento con id: 14
-[2022-05-02T13:46:36.271642900] -> Transformado correctamente.
-[2022-05-02T13:46:36.271642900] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:14
-[2022-05-02T13:46:36.271642900] -> Transformando aparcamiento con id: 15
-[2022-05-02T13:46:36.271642900] -> Transformado correctamente.
-[2022-05-02T13:46:36.271642900] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:15
-[2022-05-02T13:46:36.271642900] -> Transformando aparcamiento con id: 16
-[2022-05-02T13:46:36.271642900] -> Transformado correctamente.
-[2022-05-02T13:46:36.271642900] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:16
-[2022-05-02T13:46:36.271642900] -> Transformando aparcamiento con id: 17
-[2022-05-02T13:46:36.279713600] -> Transformado correctamente.
-[2022-05-02T13:46:36.279713600] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:17
-[2022-05-02T13:46:36.279713600] -> Transformando aparcamiento con id: 18
-[2022-05-02T13:46:36.279713600] -> Transformado correctamente.
-[2022-05-02T13:46:36.279713600] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:18
-[2022-05-02T13:46:36.279713600] -> Transformando aparcamiento con id: 19
-[2022-05-02T13:46:36.279713600] -> Transformado correctamente.
-[2022-05-02T13:46:36.279713600] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:19
-[2022-05-02T13:46:36.279713600] -> Transformando aparcamiento con id: 20
-[2022-05-02T13:46:36.279713600] -> Transformado correctamente.
-[2022-05-02T13:46:36.279713600] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:20
-[2022-05-02T13:46:36.279713600] -> Transformando aparcamiento con id: 21
-[2022-05-02T13:46:36.279713600] -> Transformado correctamente.
-[2022-05-02T13:46:36.279713600] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:21
-[2022-05-02T13:46:36.279713600] -> Transformando aparcamiento con id: 22
-[2022-05-02T13:46:36.279713600] -> Transformado correctamente.
-[2022-05-02T13:46:36.279713600] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:22
-[2022-05-02T13:46:36.279713600] -> Transformando aparcamiento con id: 113
-[2022-05-02T13:46:36.279713600] -> Transformado correctamente.
-[2022-05-02T13:46:36.279713600] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:113
-[2022-05-02T13:46:36.279713600] -> Transformando aparcamiento con id: 114
-[2022-05-02T13:46:36.279713600] -> Transformado correctamente.
-[2022-05-02T13:46:36.282608400] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:114
-[2022-05-02T13:46:36.282608400] -> Transformando aparcamiento con id: 116
-[2022-05-02T13:46:36.283107] -> Transformado correctamente.
-[2022-05-02T13:46:36.283107] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:116
-[2022-05-02T13:46:36.283107] -> Transformando aparcamiento con id: 789
-[2022-05-02T13:46:36.283107] -> Transformado correctamente.
-[2022-05-02T13:46:36.283107] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:789
-[2022-05-02T13:46:36.283107] -> Transformando aparcamiento con id: 118
-[2022-05-02T13:46:36.283107] -> Transformado correctamente.
-[2022-05-02T13:46:36.283107] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:118
-[2022-05-02T13:46:36.284766200] -> Transformando aparcamiento con id: 119
-[2022-05-02T13:46:36.285704300] -> Transformado correctamente.
-[2022-05-02T13:46:36.285704300] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:119
-[2022-05-02T13:46:36.286796500] -> Transformando aparcamiento con id: 120
-[2022-05-02T13:46:36.287297900] -> Transformado correctamente.
-[2022-05-02T13:46:36.287297900] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:120
-[2022-05-02T13:46:36.287297900] -> Transformando aparcamiento con id: 121
-[2022-05-02T13:46:36.287797300] -> Transformado correctamente.
-[2022-05-02T13:46:36.288297200] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:121
-[2022-05-02T13:46:36.288297200] -> Transformando aparcamiento con id: 124
-[2022-05-02T13:46:36.288936] -> Transformado correctamente.
-[2022-05-02T13:46:36.288936] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:124
-[2022-05-02T13:46:36.288936] -> Transformando aparcamiento con id: 536
-[2022-05-02T13:46:36.288936] -> Transformado correctamente.
-[2022-05-02T13:46:36.288936] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:536
-[2022-05-02T13:46:36.288936] -> Transformando aparcamiento con id: 537
-[2022-05-02T13:46:36.288936] -> Transformado correctamente.
-[2022-05-02T13:46:36.288936] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:537
-[2022-05-02T13:46:36.290028300] -> Transformando aparcamiento con id: 538
-[2022-05-02T13:46:36.290527200] -> Transformado correctamente.
-[2022-05-02T13:46:36.290527200] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:538
-[2022-05-02T13:46:36.290527200] -> Transformando aparcamiento con id: 778
-[2022-05-02T13:46:36.290527200] -> Transformado correctamente.
-[2022-05-02T13:46:36.290527200] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:778
-[2022-05-02T13:46:36.290527200] -> Transformando aparcamiento con id: 540
-[2022-05-02T13:46:36.290527200] -> Transformado correctamente.
-[2022-05-02T13:46:36.290527200] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:540
-[2022-05-02T13:46:36.290527200] -> Transformando aparcamiento con id: 541
-[2022-05-02T13:46:36.290527200] -> Transformado correctamente.
-[2022-05-02T13:46:36.290527200] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:541
-[2022-05-02T13:46:36.292063800] -> Transformando aparcamiento con id: 542
-[2022-05-02T13:46:36.292063800] -> Transformado correctamente.
-[2022-05-02T13:46:36.292563700] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:542
-[2022-05-02T13:46:36.293060200] -> Transformando aparcamiento con id: 543
-[2022-05-02T13:46:36.293060200] -> Transformado correctamente.
-[2022-05-02T13:46:36.293060200] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:543
-[2022-05-02T13:46:36.293060200] -> Transformando aparcamiento con id: 544
-[2022-05-02T13:46:36.293562400] -> Transformado correctamente.
-[2022-05-02T13:46:36.293562400] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:544
-[2022-05-02T13:46:36.293562400] -> Transformando aparcamiento con id: 547
-[2022-05-02T13:46:36.294062200] -> Transformado correctamente.
-[2022-05-02T13:46:36.294062200] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:547
-[2022-05-02T13:46:36.294561400] -> Transformando aparcamiento con id: 548
-[2022-05-02T13:46:36.294668] -> Transformado correctamente.
-[2022-05-02T13:46:36.294668] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:548
-[2022-05-02T13:46:36.294668] -> Transformando aparcamiento con id: 782
-[2022-05-02T13:46:36.295246] -> Transformado correctamente.
-[2022-05-02T13:46:36.295246] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:782
-[2022-05-02T13:46:36.295246] -> Transformando aparcamiento con id: 745
-[2022-05-02T13:46:36.295246] -> Transformado correctamente.
-[2022-05-02T13:46:36.295246] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:745
-[2022-05-02T13:46:36.295246] -> Transformando aparcamiento con id: 551
-[2022-05-02T13:46:36.295748700] -> Transformado correctamente.
-[2022-05-02T13:46:36.295748700] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:551
-[2022-05-02T13:46:36.295748700] -> Transformando aparcamiento con id: 552
-[2022-05-02T13:46:36.295748700] -> Transformado correctamente.
-[2022-05-02T13:46:36.296249400] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:552
-[2022-05-02T13:46:36.296249400] -> Transformando aparcamiento con id: 363
-[2022-05-02T13:46:36.296658300] -> Transformado correctamente.
-[2022-05-02T13:46:36.296658300] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:363
-[2022-05-02T13:46:36.297159600] -> Transformando aparcamiento con id: 365
-[2022-05-02T13:46:36.297159600] -> Transformado correctamente.
-[2022-05-02T13:46:36.297159600] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:365
-[2022-05-02T13:46:36.297159600] -> Transformando aparcamiento con id: 366
-[2022-05-02T13:46:36.297657100] -> Transformado correctamente.
-[2022-05-02T13:46:36.297657100] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:366
-[2022-05-02T13:46:36.297657100] -> Transformando aparcamiento con id: 367
-[2022-05-02T13:46:36.298161800] -> Transformado correctamente.
-[2022-05-02T13:46:36.298756200] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:367
-[2022-05-02T13:46:36.298756200] -> Transformando aparcamiento con id: 368
-[2022-05-02T13:46:36.299258] -> Transformado correctamente.
-[2022-05-02T13:46:36.299258] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:368
-[2022-05-02T13:46:36.299258] -> Transformando aparcamiento con id: 370
-[2022-05-02T13:46:36.299925200] -> Transformado correctamente.
-[2022-05-02T13:46:36.300545100] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:370
-[2022-05-02T13:46:36.300545100] -> Transformando aparcamiento con id: 922
-[2022-05-02T13:46:36.300545100] -> Transformado correctamente.
-[2022-05-02T13:46:36.300545100] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:922
-[2022-05-02T13:46:36.301044] -> Transformando aparcamiento con id: 372
-[2022-05-02T13:46:36.301044] -> Transformado correctamente.
-[2022-05-02T13:46:36.301044] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:372
-[2022-05-02T13:46:36.301044] -> Transformando aparcamiento con id: 453
-[2022-05-02T13:46:36.301044] -> Transformado correctamente.
-[2022-05-02T13:46:36.301751800] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:453
-[2022-05-02T13:46:36.302252700] -> Transformando aparcamiento con id: 454
-[2022-05-02T13:46:36.302932300] -> Transformado correctamente.
-[2022-05-02T13:46:36.302932300] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:454
-[2022-05-02T13:46:36.302932300] -> Transformando aparcamiento con id: 455
-[2022-05-02T13:46:36.302932300] -> Transformado correctamente.
-[2022-05-02T13:46:36.303434200] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:455
-[2022-05-02T13:46:36.303434200] -> Transformando aparcamiento con id: 456
-[2022-05-02T13:46:36.303639400] -> Transformado correctamente.
-[2022-05-02T13:46:36.303639400] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:456
-[2022-05-02T13:46:36.303915600] -> Transformando aparcamiento con id: 457
-[2022-05-02T13:46:36.303915600] -> Transformado correctamente.
-[2022-05-02T13:46:36.303915600] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:457
-[2022-05-02T13:46:36.304416900] -> Transformando aparcamiento con id: 459
-[2022-05-02T13:46:36.304416900] -> Transformado correctamente.
-[2022-05-02T13:46:36.305112500] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:459
-[2022-05-02T13:46:36.305112500] -> Transformando aparcamiento con id: 777
-[2022-05-02T13:46:36.305112500] -> Transformado correctamente.
-[2022-05-02T13:46:36.305112500] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:777
-[2022-05-02T13:46:36.305112500] -> Transformando aparcamiento con id: 461
-[2022-05-02T13:46:36.305112500] -> Transformado correctamente.
-[2022-05-02T13:46:36.305112500] -> AparcamientoBicleta aÃ±adido correctamente al array de EscritorXML Id:461
-[2022-05-02T13:46:36.305609] -> Array de elements Transformado correctamente.
-[2022-05-02T13:46:36.305609] -> Separando arrays.
-[2022-05-02T13:46:36.305988200] -> Analizando Aparcamiento con id:13
-[2022-05-02T13:46:36.305988200] -> Aparcamiento no valido. Moviendo al array secundario.
-[2022-05-02T13:46:36.306485500] -> Analizando Aparcamiento con id:14
-[2022-05-02T13:46:36.306621900] -> Aparcamiento valido.
-[2022-05-02T13:46:36.306621900] -> Analizando Aparcamiento con id:15
-[2022-05-02T13:46:36.306621900] -> Aparcamiento valido.
-[2022-05-02T13:46:36.306621900] -> Analizando Aparcamiento con id:16
-[2022-05-02T13:46:36.306621900] -> Aparcamiento valido.
-[2022-05-02T13:46:36.306621900] -> Analizando Aparcamiento con id:17
-[2022-05-02T13:46:36.306621900] -> Aparcamiento no valido. Moviendo al array secundario.
-[2022-05-02T13:46:36.306621900] -> Analizando Aparcamiento con id:18
-[2022-05-02T13:46:36.307120800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.307120800] -> Analizando Aparcamiento con id:19
-[2022-05-02T13:46:36.307120800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.307120800] -> Analizando Aparcamiento con id:20
-[2022-05-02T13:46:36.307120800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.307120800] -> Analizando Aparcamiento con id:21
-[2022-05-02T13:46:36.308808300] -> Aparcamiento valido.
-[2022-05-02T13:46:36.308808300] -> Analizando Aparcamiento con id:22
-[2022-05-02T13:46:36.308808300] -> Aparcamiento no valido. Moviendo al array secundario.
-[2022-05-02T13:46:36.308808300] -> Analizando Aparcamiento con id:113
-[2022-05-02T13:46:36.309307400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.309388500] -> Analizando Aparcamiento con id:114
-[2022-05-02T13:46:36.309388500] -> Aparcamiento valido.
-[2022-05-02T13:46:36.309388500] -> Analizando Aparcamiento con id:116
-[2022-05-02T13:46:36.309388500] -> Aparcamiento valido.
-[2022-05-02T13:46:36.309388500] -> Analizando Aparcamiento con id:789
-[2022-05-02T13:46:36.309388500] -> Aparcamiento no valido. Moviendo al array secundario.
-[2022-05-02T13:46:36.309388500] -> Analizando Aparcamiento con id:118
-[2022-05-02T13:46:36.309388500] -> Aparcamiento no valido. Moviendo al array secundario.
-[2022-05-02T13:46:36.309388500] -> Analizando Aparcamiento con id:119
-[2022-05-02T13:46:36.309388500] -> Aparcamiento valido.
-[2022-05-02T13:46:36.309887500] -> Analizando Aparcamiento con id:120
-[2022-05-02T13:46:36.309887500] -> Aparcamiento valido.
-[2022-05-02T13:46:36.309887500] -> Analizando Aparcamiento con id:121
-[2022-05-02T13:46:36.309887500] -> Aparcamiento valido.
-[2022-05-02T13:46:36.309887500] -> Analizando Aparcamiento con id:124
-[2022-05-02T13:46:36.309887500] -> Aparcamiento valido.
-[2022-05-02T13:46:36.309887500] -> Analizando Aparcamiento con id:536
-[2022-05-02T13:46:36.310789600] -> Aparcamiento valido.
-[2022-05-02T13:46:36.310789600] -> Analizando Aparcamiento con id:537
-[2022-05-02T13:46:36.310789600] -> Aparcamiento valido.
-[2022-05-02T13:46:36.310789600] -> Analizando Aparcamiento con id:538
-[2022-05-02T13:46:36.310789600] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:778
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:540
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:541
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:542
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:543
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:544
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:547
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:548
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:782
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:745
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:551
-[2022-05-02T13:46:36.311289400] -> Aparcamiento valido.
-[2022-05-02T13:46:36.311289400] -> Analizando Aparcamiento con id:552
-[2022-05-02T13:46:36.312673] -> Aparcamiento valido.
-[2022-05-02T13:46:36.312673] -> Analizando Aparcamiento con id:363
-[2022-05-02T13:46:36.312673] -> Aparcamiento valido.
-[2022-05-02T13:46:36.312673] -> Analizando Aparcamiento con id:365
-[2022-05-02T13:46:36.312673] -> Aparcamiento valido.
-[2022-05-02T13:46:36.312673] -> Analizando Aparcamiento con id:366
-[2022-05-02T13:46:36.312673] -> Aparcamiento valido.
-[2022-05-02T13:46:36.312673] -> Analizando Aparcamiento con id:367
-[2022-05-02T13:46:36.312673] -> Aparcamiento valido.
-[2022-05-02T13:46:36.312673] -> Analizando Aparcamiento con id:368
-[2022-05-02T13:46:36.312673] -> Aparcamiento valido.
-[2022-05-02T13:46:36.312673] -> Analizando Aparcamiento con id:370
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Analizando Aparcamiento con id:922
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Analizando Aparcamiento con id:372
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Analizando Aparcamiento con id:453
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Analizando Aparcamiento con id:454
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Analizando Aparcamiento con id:455
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Analizando Aparcamiento con id:456
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Analizando Aparcamiento con id:457
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Analizando Aparcamiento con id:459
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Analizando Aparcamiento con id:777
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Analizando Aparcamiento con id:461
-[2022-05-02T13:46:36.313172800] -> Aparcamiento valido.
-[2022-05-02T13:46:36.313172800] -> Ordenando lista de aparcamientos validos.
-[2022-05-02T13:46:36.313172800] -> Lista ordenada.
-[2022-05-02T13:46:36.313172800] -> Arrays separados.
-[2022-05-02T13:46:36.313172800] -> Escribiendo Aparcamientos validos...
-[2022-05-02T13:46:36.515028] -> Escribiendo Aparcamientos invalidos...
-[2022-05-02T13:46:36.544517400] -> Aparcamientos Escritos. Ejecucion terminada.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:7809] -> Comienza la ejecucion
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:8906] -> Se ha inicializado el logger. Ruta: D:\GDrive\workspaces\java\IntelliJWS\pr3evPro\ficheros\log.txt
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:8906] -> Fichero abierto XML correctamente. Ruta: D:\GDrive\workspaces\java\IntelliJWS\pr3evPro\ficheros\aparcamiento-bicicleta.xml
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1249] -> Raiz obtenida correctamente.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1279] -> Nodos extraidos. Cantidad: 50
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1279] -> Comprobando validez. Requerido: 50
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1279] -> Cantidad de nodos validada correctamente.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1279] -> Transformando NodeList en Array de elements...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1289] -> Lista de nodos transformada correctamente a array.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1289] -> Iterando y transformando en Objeto...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1289] -> Transformando aparcamiento con id: 13
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1299] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:13
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1309] -> Transformando aparcamiento con id: 14
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1309] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:14
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1309] -> Transformando aparcamiento con id: 15
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1309] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:15
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1319] -> Transformando aparcamiento con id: 16
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1319] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:16
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1319] -> Transformando aparcamiento con id: 17
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1319] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:17
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1319] -> Transformando aparcamiento con id: 18
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1329] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:18
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1329] -> Transformando aparcamiento con id: 19
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1329] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:19
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1329] -> Transformando aparcamiento con id: 20
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1329] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:20
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1339] -> Transformando aparcamiento con id: 21
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1339] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:21
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1339] -> Transformando aparcamiento con id: 22
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1339] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:22
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1339] -> Transformando aparcamiento con id: 113
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1349] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:113
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1349] -> Transformando aparcamiento con id: 114
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1349] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:114
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1349] -> Transformando aparcamiento con id: 116
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1349] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:116
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1349] -> Transformando aparcamiento con id: 789
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1359] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:789
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1359] -> Transformando aparcamiento con id: 118
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1359] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:118
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1359] -> Transformando aparcamiento con id: 119
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1359] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:119
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1359] -> Transformando aparcamiento con id: 120
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1369] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:120
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1369] -> Transformando aparcamiento con id: 121
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1369] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:121
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1369] -> Transformando aparcamiento con id: 124
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1369] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:124
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1379] -> Transformando aparcamiento con id: 536
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1379] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:536
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1379] -> Transformando aparcamiento con id: 537
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1379] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:537
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1379] -> Transformando aparcamiento con id: 538
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1379] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:538
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1389] -> Transformando aparcamiento con id: 778
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1389] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:778
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1389] -> Transformando aparcamiento con id: 540
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1389] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:540
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1389] -> Transformando aparcamiento con id: 541
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1399] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:541
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1399] -> Transformando aparcamiento con id: 542
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1399] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:542
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1399] -> Transformando aparcamiento con id: 543
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1399] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:543
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1409] -> Transformando aparcamiento con id: 544
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1409] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:544
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1409] -> Transformando aparcamiento con id: 547
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1409] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:547
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1409] -> Transformando aparcamiento con id: 548
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1409] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:548
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1419] -> Transformando aparcamiento con id: 782
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1419] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:782
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1419] -> Transformando aparcamiento con id: 745
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1419] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:745
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1419] -> Transformando aparcamiento con id: 551
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1429] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:551
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1429] -> Transformando aparcamiento con id: 552
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1429] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:552
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1429] -> Transformando aparcamiento con id: 363
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1429] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:363
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1439] -> Transformando aparcamiento con id: 365
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1439] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:365
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1439] -> Transformando aparcamiento con id: 366
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1449] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:366
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1449] -> Transformando aparcamiento con id: 367
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1449] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:367
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1459] -> Transformando aparcamiento con id: 368
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1459] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:368
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1459] -> Transformando aparcamiento con id: 370
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1459] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:370
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1469] -> Transformando aparcamiento con id: 922
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1469] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:922
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1469] -> Transformando aparcamiento con id: 372
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1469] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:372
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1469] -> Transformando aparcamiento con id: 453
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1469] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:453
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1479] -> Transformando aparcamiento con id: 454
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1479] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:454
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1479] -> Transformando aparcamiento con id: 455
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1479] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:455
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1479] -> Transformando aparcamiento con id: 456
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1479] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:456
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1489] -> Transformando aparcamiento con id: 457
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1489] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:457
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1489] -> Transformando aparcamiento con id: 459
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1489] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:459
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1489] -> Transformando aparcamiento con id: 777
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1499] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:777
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1499] -> Transformando aparcamiento con id: 461
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1499] -> AparcamientoBicleta transformado y ananido correctamente al array de EscritorXML. Id:461
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1499] -> Array de elements Transformado correctamente.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1499] -> Separando arrays...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1499] -> Analizando Aparcamiento con id:13
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1509] -> Aparcamiento no valido. Moviendo al array secundario. Plazas: 0
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1509] -> Analizando Aparcamiento con id:14
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1509] -> Aparcamiento valido. Plazas: 12
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1509] -> Analizando Aparcamiento con id:15
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1509] -> Aparcamiento valido. Plazas: 16
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1509] -> Analizando Aparcamiento con id:16
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1518] -> Aparcamiento valido. Plazas: 10
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1518] -> Analizando Aparcamiento con id:17
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1518] -> Aparcamiento no valido. Moviendo al array secundario. Plazas: 0
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1518] -> Analizando Aparcamiento con id:18
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1518] -> Aparcamiento valido. Plazas: 6
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1518] -> Analizando Aparcamiento con id:19
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1518] -> Aparcamiento valido. Plazas: 10
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1528] -> Analizando Aparcamiento con id:20
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1528] -> Aparcamiento valido. Plazas: 11
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1538] -> Analizando Aparcamiento con id:21
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1538] -> Aparcamiento valido. Plazas: 10
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1538] -> Analizando Aparcamiento con id:22
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1538] -> Aparcamiento no valido. Moviendo al array secundario. Plazas: 0
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1548] -> Analizando Aparcamiento con id:113
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1548] -> Aparcamiento valido. Plazas: 16
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1548] -> Analizando Aparcamiento con id:114
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1548] -> Aparcamiento valido. Plazas: 6
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1548] -> Analizando Aparcamiento con id:116
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1548] -> Aparcamiento valido. Plazas: 12
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1548] -> Analizando Aparcamiento con id:789
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1548] -> Aparcamiento no valido. Moviendo al array secundario. Plazas: 0
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1558] -> Analizando Aparcamiento con id:118
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1558] -> Aparcamiento valido. Plazas: 32
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1558] -> Analizando Aparcamiento con id:119
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1558] -> Aparcamiento valido. Plazas: 12
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1558] -> Analizando Aparcamiento con id:120
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1558] -> Aparcamiento valido. Plazas: 12
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1558] -> Analizando Aparcamiento con id:121
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1568] -> Aparcamiento valido. Plazas: 20
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1568] -> Analizando Aparcamiento con id:124
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1568] -> Aparcamiento valido. Plazas: 11
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1568] -> Analizando Aparcamiento con id:536
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1568] -> Aparcamiento valido. Plazas: 40
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1568] -> Analizando Aparcamiento con id:537
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1568] -> Aparcamiento valido. Plazas: 52
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1568] -> Analizando Aparcamiento con id:538
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1578] -> Aparcamiento valido. Plazas: 28
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1578] -> Analizando Aparcamiento con id:778
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1578] -> Aparcamiento valido. Plazas: 14
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1578] -> Analizando Aparcamiento con id:540
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1578] -> Aparcamiento valido. Plazas: 14
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1578] -> Analizando Aparcamiento con id:541
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1588] -> Aparcamiento valido. Plazas: 42
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1588] -> Analizando Aparcamiento con id:542
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1588] -> Aparcamiento valido. Plazas: 20
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1588] -> Analizando Aparcamiento con id:543
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1588] -> Aparcamiento valido. Plazas: 20
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1598] -> Analizando Aparcamiento con id:544
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1598] -> Aparcamiento valido. Plazas: 10
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1598] -> Analizando Aparcamiento con id:547
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1598] -> Aparcamiento valido. Plazas: 22
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1598] -> Analizando Aparcamiento con id:548
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1598] -> Aparcamiento valido. Plazas: 12
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1598] -> Analizando Aparcamiento con id:782
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1608] -> Aparcamiento valido. Plazas: 10
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1608] -> Analizando Aparcamiento con id:745
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1608] -> Aparcamiento valido. Plazas: 12
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1608] -> Analizando Aparcamiento con id:551
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1608] -> Aparcamiento valido. Plazas: 14
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1608] -> Analizando Aparcamiento con id:552
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1608] -> Aparcamiento valido. Plazas: 6
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1608] -> Analizando Aparcamiento con id:363
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1608] -> Aparcamiento valido. Plazas: 15
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1618] -> Analizando Aparcamiento con id:365
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1618] -> Aparcamiento valido. Plazas: 12
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1618] -> Analizando Aparcamiento con id:366
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1618] -> Aparcamiento valido. Plazas: 8
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1618] -> Analizando Aparcamiento con id:367
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1618] -> Aparcamiento valido. Plazas: 18
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1618] -> Analizando Aparcamiento con id:368
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1618] -> Aparcamiento valido. Plazas: 8
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1618] -> Analizando Aparcamiento con id:370
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1618] -> Aparcamiento valido. Plazas: 20
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1628] -> Analizando Aparcamiento con id:922
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1628] -> Aparcamiento valido. Plazas: 6
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1628] -> Analizando Aparcamiento con id:372
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1628] -> Aparcamiento valido. Plazas: 50
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1628] -> Analizando Aparcamiento con id:453
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1628] -> Aparcamiento valido. Plazas: 12
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1628] -> Analizando Aparcamiento con id:454
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1628] -> Aparcamiento valido. Plazas: 14
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1638] -> Analizando Aparcamiento con id:455
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1638] -> Aparcamiento valido. Plazas: 14
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1638] -> Analizando Aparcamiento con id:456
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1638] -> Aparcamiento valido. Plazas: 10
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1638] -> Analizando Aparcamiento con id:457
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1638] -> Aparcamiento valido. Plazas: 12
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1638] -> Analizando Aparcamiento con id:459
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1638] -> Aparcamiento valido. Plazas: 20
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1638] -> Analizando Aparcamiento con id:777
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1638] -> Aparcamiento valido. Plazas: 10
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1648] -> Analizando Aparcamiento con id:461
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1648] -> Aparcamiento valido. Plazas: 20
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1648] -> Ordenando lista de aparcamientos validos...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1648] -> Lista ordenada.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1648] -> Arrays separados.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1658] -> Escribiendo Aparcamientos validos...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1658] -> Creando archivo destino...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1668] -> Archivo creado. Obteniendo Raiz...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1668] -> Raiz obtenida. Rellenando informacion del array de objetos...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1668] -> Rellenando informacion de Aparcamiento ID: 552
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1678] -> Rellenando informacion de Aparcamiento ID: 114
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1678] -> Rellenando informacion de Aparcamiento ID: 922
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1678] -> Rellenando informacion de Aparcamiento ID: 18
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1678] -> Rellenando informacion de Aparcamiento ID: 366
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1688] -> Rellenando informacion de Aparcamiento ID: 368
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1688] -> Rellenando informacion de Aparcamiento ID: 777
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1688] -> Rellenando informacion de Aparcamiento ID: 19
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1688] -> Rellenando informacion de Aparcamiento ID: 544
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1688] -> Rellenando informacion de Aparcamiento ID: 456
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1688] -> Rellenando informacion de Aparcamiento ID: 21
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1688] -> Rellenando informacion de Aparcamiento ID: 782
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1688] -> Rellenando informacion de Aparcamiento ID: 16
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1688] -> Rellenando informacion de Aparcamiento ID: 124
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1698] -> Rellenando informacion de Aparcamiento ID: 20
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1698] -> Rellenando informacion de Aparcamiento ID: 457
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1698] -> Rellenando informacion de Aparcamiento ID: 119
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1698] -> Rellenando informacion de Aparcamiento ID: 116
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1698] -> Rellenando informacion de Aparcamiento ID: 548
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1698] -> Rellenando informacion de Aparcamiento ID: 14
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1698] -> Rellenando informacion de Aparcamiento ID: 120
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1698] -> Rellenando informacion de Aparcamiento ID: 745
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1708] -> Rellenando informacion de Aparcamiento ID: 365
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1708] -> Rellenando informacion de Aparcamiento ID: 453
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1708] -> Rellenando informacion de Aparcamiento ID: 455
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1708] -> Rellenando informacion de Aparcamiento ID: 551
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1708] -> Rellenando informacion de Aparcamiento ID: 540
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1708] -> Rellenando informacion de Aparcamiento ID: 454
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1708] -> Rellenando informacion de Aparcamiento ID: 778
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1708] -> Rellenando informacion de Aparcamiento ID: 363
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1718] -> Rellenando informacion de Aparcamiento ID: 15
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1718] -> Rellenando informacion de Aparcamiento ID: 113
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1718] -> Rellenando informacion de Aparcamiento ID: 367
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1718] -> Rellenando informacion de Aparcamiento ID: 121
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1718] -> Rellenando informacion de Aparcamiento ID: 543
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1718] -> Rellenando informacion de Aparcamiento ID: 542
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1718] -> Rellenando informacion de Aparcamiento ID: 461
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1728] -> Rellenando informacion de Aparcamiento ID: 459
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1728] -> Rellenando informacion de Aparcamiento ID: 370
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1728] -> Rellenando informacion de Aparcamiento ID: 547
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1728] -> Rellenando informacion de Aparcamiento ID: 538
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1738] -> Rellenando informacion de Aparcamiento ID: 118
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1738] -> Rellenando informacion de Aparcamiento ID: 536
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1738] -> Rellenando informacion de Aparcamiento ID: 541
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1738] -> Rellenando informacion de Aparcamiento ID: 372
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1738] -> Rellenando informacion de Aparcamiento ID: 537
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:1738] -> Informacion rellenada. Terminando creacion del archivo...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2436] -> Terminada la creacion del archivo de validos.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2436] -> Escribiendo Aparcamientos invalidos...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2436] -> Comprobando si los aparcamientos ya han sido escritos en el archivo...
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2466] -> El Archivo de invalidos no existe. Ignorando Comprobacion.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2476] -> Creado archivo de invalidos.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2476] -> Escribiendo aparcamiento con ID: 13
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2486] -> Escribiendo aparcamiento con ID: 17
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2486] -> Escribiendo aparcamiento con ID: 22
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2486] -> Escribiendo aparcamiento con ID: 789
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2486] -> Terminada la creacion y escritura del archivo de invalidos.
+[Y:2022-M:05-D:02 H:15-M:10-S:10-ML:2486] -> Aparcamientos Escritos. Ejecucion terminada.
