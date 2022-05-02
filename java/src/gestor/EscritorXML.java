@@ -11,9 +11,6 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -21,6 +18,14 @@ public class EscritorXML {
 	private final ArrayList<AparcamientoBicicleta> listaAparcamientosValidos = new ArrayList<>();
 	private final ArrayList<AparcamientoBicicleta> listaAparcamientosInvalidos = new ArrayList<>();
 
+	/**
+	 * Metodo addAparcamientoBicicleta
+	 * <hr/>
+	 * Añade un AparcamientoBicleta al array principal.
+	 *
+	 * @param apb AparcamientoBicicleta a añadir.
+	 * @throws XMLException Si el objeto es nulo.
+	 */
 	public void addAparcamientoBicicleta(AparcamientoBicicleta apb) throws XMLException {
 		if(apb == null){
 			throw new XMLException("No puedes agregar aparcamientos nulos.");
@@ -28,17 +33,36 @@ public class EscritorXML {
 		listaAparcamientosValidos.add(apb);
 	}
 
+	/**
+	 * metodo escribeAparcamientosEnArchivo
+	 * <hr/>
+	 * Separa los arrays, eliminando los Aparcamientos invalidos del array principal y
+	 * almacenandolos en el array secundario. <br>
+	 *
+	 * @param rutaXmlNueva Ruta donde se escribira los aparcamientos validos.
+	 * @param rutaXmlInvalidos Ruta donde se escribiran los aparcamientos invalidos.
+	 * @throws XMLException Si ha habido un problema con la separacion de arrays o la escritura de los mismos.
+	 */
 	public void escribeAparcamientosEnArchivo(String rutaXmlNueva, String rutaXmlInvalidos) throws XMLException {
 		separaArrays();
 		escribeAparcamientosValidos(rutaXmlNueva);
 		escribeAparcamientosInvalidos(rutaXmlInvalidos);
 	}
 
+	/**
+	 *  metodo separaArrays
+	 *  <hr/>
+	 *  Crea un iterator del array principal, y lo recorre.
+	 *  Si el numero de plazas del array es nulo o 0, este es eliminado y agregado al array secundario. <br/>
+	 *  Una vez separados, el array principal es ordenado por plazas, y despues por calle.
+	 * @throws XMLException si hay error en la ordenacion del array principal.
+	 */
 	private void separaArrays() throws XMLException {
 		ListIterator<AparcamientoBicicleta> it = listaAparcamientosValidos.listIterator();
 		while(it.hasNext()){
 			AparcamientoBicicleta apb = it.next();
-			if(apb.getPlazas() <= 0){
+			Integer plazas = apb.getPlazas();
+			if(plazas == null || plazas <= 0){
 				it.remove();
 				listaAparcamientosInvalidos.add(apb);
 			}
@@ -46,6 +70,13 @@ public class EscritorXML {
 		sortListaAparcamientos();
 	}
 
+	/**
+	 * metodo sortListaAparcamientos
+	 * <hr/>
+	 * Intenta ordenar el array principal.
+	 *
+	 * @throws XMLException si ocurre algun error en la ordenacion.
+	 */
 	public void sortListaAparcamientos() throws XMLException{
 		try{
 			Collections.sort(listaAparcamientosValidos);
@@ -54,6 +85,15 @@ public class EscritorXML {
 		}
 	}
 
+	/**
+	 * metodo escribeAparcamientosValidos
+	 * <hr/>
+	 * Crea un documento XML con la estructura indicada en el enunciado.
+	 * Lo rellena con la informacion de los objetos del array Principal.
+	 *
+	 * @param rutaXmlNueva ruta donde se guardara la salida del nuevo documento xml.
+	 * @throws XMLException si ocurre algun error en la creacion o rellenado del nuevo archivo.
+	 */
 	private void escribeAparcamientosValidos(String rutaXmlNueva) throws XMLException {
 		try {
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -91,6 +131,15 @@ public class EscritorXML {
 		}
 	}
 
+	/**
+	 * metodo rellenaInformacionXML
+	 * <hr/>
+	 * Crea un tag que cuelga desde la raiz, y lo rellena con la informacion del objeto apb.
+	 *
+	 * @param apb objeto que contiene la informacion a rellenar.
+	 * @param miDoc documento que contendra la tag creada.
+	 * @param raiz raiz del documento.
+	 */
 	private void rellenaInformacionXML(AparcamientoBicicleta apb, Document miDoc, Element raiz) {
 		//Creamos todos los elementos necesarios
 		Element etEstacion = miDoc.createElement("estacion");
@@ -122,13 +171,21 @@ public class EscritorXML {
 		raiz.appendChild(etEstacion);
 	}
 
+	/**
+	 * metodo escribeAparcamientosInvalidos
+	 * <hr/>
+	 * este metodo escribira los aparcamientos que contiene el array secundario.
+	 * Como son invalidos, se escribira solamente su id y la fecha actual de cuando fueron escritos.
+	 * El contenido del archivo no sera reiniciado en cada ejecucion. <br/>
+	 * Por ulitmo, antes de escribir en el archivo, comprobara si este ya tiene contenido.
+	 * Si el archivo tiene algun aparcamiento y este tambien se encuentre en el array, sera eliminado del mismo,
+	 * para evitar entradas repetidas en el archivo.
+	 *
+	 * @param rutaXmlInvalidos ruta del archivo de invalidos.
+	 * @throws XMLException si ocurre algun error en la escritura del archivo.
+	 */
 	private void escribeAparcamientosInvalidos(String rutaXmlInvalidos) throws XMLException {
-		try{
-			compruebaSiExisteEnArchivo(rutaXmlInvalidos);
-		}catch(XMLException ex){
-
-		}
-
+		compruebaSiExisteEnArchivo(rutaXmlInvalidos);
 
 		try (DataOutputStream dos = new DataOutputStream(
 				new FileOutputStream(rutaXmlInvalidos, true))
@@ -147,7 +204,16 @@ public class EscritorXML {
 		}
 	}
 
-	private void compruebaSiExisteEnArchivo(String rutaXmlInvalidos) throws XMLException {
+	/**
+	 * metodo compruebaSiExisteEnArchivo
+	 * <hr/>
+	 * Intenta leer el archivo.
+	 * si lo lee, lo analiza linea por linea.
+	 * Si hay algun aparcamiento con el mismo id que algun aparcamiento del array, este es eliminado.
+	 *
+	 * @param rutaXmlInvalidos ruta del archivo de aparcamientos invalidos.
+	 */
+	private void compruebaSiExisteEnArchivo(String rutaXmlInvalidos){
 		try(Scanner sc = new Scanner(new File(rutaXmlInvalidos))){
 			while(sc.hasNext()){
 				String linea = sc.nextLine();
@@ -156,10 +222,22 @@ public class EscritorXML {
 				listaAparcamientosInvalidos.removeIf(apb -> idLinea.equals(apb.getId()));
 			}
 		} catch (Exception e){
-			throw new XMLException("No se ha podido encontrar el archivo de invalidos");
+			//throw new XMLException("No se ha podido encontrar el archivo de invalidos");
+			//logger
 		}
 	}
 
+	/**
+	 * metodo extraeIDLinea
+	 * <hr/>
+	 * Extra el id de la linea leida. dividira la linea por :, y luego obtendra la posicion de la primera coma.
+	 * Extraera la cadena desde el principio hasta la primera coma.
+	 * Hara un parseInt, y si este falla esque la cadena extraida no era un numero.
+	 *
+	 * @param l linea leida del archivo.
+	 * @return id extraida en formato numerico.
+	 * @throws XMLException si ocurre algun error en la extracion o en el parseInt.
+	 */
 	private Integer extraeIDLinea(String l) throws XMLException {
 		String[] lineaSeparada = l.split(":");
 		int posicionComa = obtenerPosicionComa(lineaSeparada[1]);
@@ -174,14 +252,30 @@ public class EscritorXML {
 		}
 	}
 
-	private int obtenerPosicionComa(String linea) {
-		for(int i=0; i<linea.length(); i++) {
-			if(linea.charAt(i) == ',')
+	/**
+	 * metodo obtenerPosicionComa
+	 * <hr/>
+	 * obtiene la primera coma encontrada en la linea pasada por parametro.
+	 * @param c cadena a analizar
+	 * @return numero indicando la posicion de la coma. si no hay ninguna, devolvera -1.
+	 */
+	private int obtenerPosicionComa(String c) {
+		for(int i=0; i<c.length(); i++) {
+			if(c.charAt(i) == ',')
 				return i;
 		}
 		return -1;
 	}
 
+	/**
+	 * metodo setRutaDestino
+	 * <hr/>
+	 * comprueba que la ruta no es nula ni cadena vacia.
+	 *
+	 * @param rutaDestino ruta del archivo donde se escribiran los aparcamientos validos.
+	 * @return objeto File abierto en esa ruta.
+	 * @throws XMLException Error si la ruta no es valida.
+	 */
 	private File setRutaDestino(String rutaDestino) throws XMLException {
 		if(rutaDestino == null || rutaDestino.length() == 0){
 			throw new XMLException("La ruta no es valida.");
@@ -189,6 +283,15 @@ public class EscritorXML {
 		return setFicheroDestino(rutaDestino);
 	}
 
+	/**
+	 * metodo setFicheroDestino
+	 * <hr/>
+	 * crea un objeto file con la ruta validada.
+	 *
+	 * @param rutaDestino ruta del archivo validada previamente.
+	 * @return objeto File en la ruta validada.
+	 * @throws XMLException Error si la ruta apunta a un directorio y no a un fichero.
+	 */
 	private File setFicheroDestino(String rutaDestino) throws XMLException {
 		File f = new File(rutaDestino);
 		if(f.isDirectory()){

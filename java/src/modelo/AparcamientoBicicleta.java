@@ -3,6 +3,7 @@ package modelo;
 import exception.XMLException;
 
 import java.util.InputMismatchException;
+import java.util.Objects;
 
 public final class AparcamientoBicicleta implements Comparable<AparcamientoBicicleta>{
 	private Integer id;
@@ -13,6 +14,14 @@ public final class AparcamientoBicicleta implements Comparable<AparcamientoBicic
 	private String lastUpdated;
 	private String icon;
 
+	/**
+	 * Constructor AparcamientoBicicleta
+	 * <hr/>
+	 * Construye un objeto AparcamientoBicicleta con la informacion del array pasado por parametro.
+	 *
+	 * @param info Array con la informacion del aparcamiento.
+	 * @throws XMLException Error si el array no contiene la cantidad exacta de posiciones necesarias para crear el objeto.
+	 */
 	public AparcamientoBicicleta(String[] info) throws XMLException {
 		if(info.length != 7){
 			throw new XMLException("Ha habido un problema al crear los objetos AparcamientoBicicleta.");
@@ -20,6 +29,14 @@ public final class AparcamientoBicicleta implements Comparable<AparcamientoBicic
 		init(info);
 	}
 
+	/**
+	 * metodo Init
+	 * <hr/>
+	 * Rellena cada variable del objeto con la posicion correspondiente del array.
+	 *
+	 * @param info array de 7 posiciones
+	 * @throws XMLException Error si los datos pasados son incorrectos o no validos.
+	 */
 	private void init(String[] info) throws XMLException {
 		try{
 			setId(info[0]);
@@ -34,6 +51,7 @@ public final class AparcamientoBicicleta implements Comparable<AparcamientoBicic
 		}
 	}
 
+	//SETTERS --------------------------------------------------------------------------------
 
 	private void setId(String id) throws InputMismatchException{
 		if(id == null || id.trim().length() == 0){
@@ -75,6 +93,7 @@ public final class AparcamientoBicicleta implements Comparable<AparcamientoBicic
 		this.icon = icon;
 	}
 
+	//GETTERS --------------------------------------------------------------------------------
 
 	public Integer getId() {
 		return id;
@@ -104,6 +123,7 @@ public final class AparcamientoBicicleta implements Comparable<AparcamientoBicic
 		return icon;
 	}
 
+	//OVERRIDE --------------------------------------------------------------------------------
 
 	@Override
 	public String toString() {
@@ -128,5 +148,20 @@ public final class AparcamientoBicicleta implements Comparable<AparcamientoBicic
 			return title.compareTo(o.title);
 		}
 		return resultado;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof AparcamientoBicicleta)) return false;
+
+		AparcamientoBicicleta that = (AparcamientoBicicleta) o;
+
+		return Objects.equals(id, that.id);
+	}
+
+	@Override
+	public int hashCode() {
+		return id != null ? id.hashCode() : 0;
 	}
 }

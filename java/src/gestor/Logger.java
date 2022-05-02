@@ -10,6 +10,8 @@ public abstract class Logger {
 	private static File logFile = null;
 	private static PrintWriter escritor = null;
 
+
+
 	private static boolean valido;
 
 	public static void init(String pathToLog){

@@ -36,6 +36,8 @@ public class Main {
 			}
 			escritor.escribeAparcamientosEnArchivo(RUTA_XML_NUEVA,RUTA_XML_INVALIDOS);
 		}catch(XMLException e){
+			//escribir en el logger el error y imprimir
+			// "Ha ocurrido algun error. Por favor, comprueba el archivo ficheros/logger.txt".
 			System.out.println(e.getMessage());
 		}
 	}
