@@ -21,5 +21,3 @@ fecha y la hora registrada (LocalDateTime.now()) y el número de la estación (c
 Para guardar  los datos utilizaremos DataOutputStream. </br>
 Dicho fichero no se borrará nunca, se mantendrá con los datos de las ejecuciones anteriores.</br>
 Todos los ficheros, xml y txt, estarán en la carpeta ficheros.</br>
-
-## Pasar el proyecto a netbeans
