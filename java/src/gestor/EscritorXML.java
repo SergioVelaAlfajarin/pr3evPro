@@ -31,6 +31,7 @@ public class EscritorXML {
 			throw new XMLException("No puedes agregar aparcamientos nulos.");
 		}
 		listaAparcamientosValidos.add(apb);
+		Logger.print("AparcamientoBicleta añadido correctamente al array de EscritorXML Id:" + apb.getId());
 	}
 
 	/**
@@ -44,8 +45,12 @@ public class EscritorXML {
 	 * @throws XMLException Si ha habido un problema con la separacion de arrays o la escritura de los mismos.
 	 */
 	public void escribeAparcamientosEnArchivo(String rutaXmlNueva, String rutaXmlInvalidos) throws XMLException {
+		Logger.print("Separando arrays.");
 		separaArrays();
+		Logger.print("Arrays separados.");
+		Logger.print("Escribiendo Aparcamientos validos...");
 		escribeAparcamientosValidos(rutaXmlNueva);
+		Logger.print("Escribiendo Aparcamientos invalidos...");
 		escribeAparcamientosInvalidos(rutaXmlInvalidos);
 	}
 
@@ -62,12 +67,18 @@ public class EscritorXML {
 		while(it.hasNext()){
 			AparcamientoBicicleta apb = it.next();
 			Integer plazas = apb.getPlazas();
+			Logger.print("Analizando Aparcamiento con id:" + apb.getId());
 			if(plazas == null || plazas <= 0){
 				it.remove();
 				listaAparcamientosInvalidos.add(apb);
+				Logger.print("Aparcamiento no valido. Moviendo al array secundario. Plazas: " + plazas);
+			}else{
+				Logger.print("Aparcamiento valido. Plazas: " + plazas);
 			}
 		}
+		Logger.print("Ordenando lista de aparcamientos validos.");
 		sortListaAparcamientos();
+		Logger.print("Lista ordenada.");
 	}
 
 	/**

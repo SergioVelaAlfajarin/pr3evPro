@@ -30,7 +30,9 @@ public final class LectorXML {
 	 */
 	public void leerArchivoXML(String ruta) throws XMLException {
 		setRutaOrigen(ruta);
+		Logger.print("Fichero abierto correctamente.");
 		setRaiz();
+		Logger.print("Raiz obtenida correctamente.");
 	}
 
 	/**
@@ -87,15 +89,6 @@ public final class LectorXML {
 	}
 
 	/**
-	 * Metodo getRutaOrigen
-	 * <hr/>
-	 * @return el path absoluto del fichero abierto.
-	 */
-	public String getRutaOrigen() {
-		return ficheroOrigen.getAbsolutePath();
-	}
-
-	/**
 	 * Metodo getNodosPrincipales
 	 * <hr/>
 	 * Obtiene todos los elementos con la tag principal del documento.
@@ -107,6 +100,7 @@ public final class LectorXML {
 	public NodeList getNodosPrincipales() throws XMLException {
 		NodeList nl = raiz.getElementsByTagName("aparcamiento-bicicleta");
 		compruebaLongitudValida(nl);
+		Logger.print("Cantidad de nodos validada correctamente");
 		return nl;
 	}
 
@@ -126,6 +120,9 @@ public final class LectorXML {
 		try{
 			Integer rows = Integer.valueOf(cuenta.getTextContent());
 			Integer longitud = nl.getLength();
+
+			Logger.print("Nodos extraidos. Cantidad: " + longitud);
+			Logger.print("Comprobando validez. Requerido: " + rows);
 
 			if(!rows.equals(longitud)){
 				throw new XMLException("El archivo XML es invalido.");
@@ -159,8 +156,13 @@ public final class LectorXML {
 				informacionAparcamiento[i] = null;
 			}else{
 				informacionAparcamiento[i] = nodes.item(0).getTextContent();
+				if(i == 0){
+					Logger.print("Transformando aparcamiento con id: " + informacionAparcamiento[i]);
+				}
 			}
 		}
-		return new AparcamientoBicicleta(informacionAparcamiento);
+		AparcamientoBicicleta apb = new AparcamientoBicicleta(informacionAparcamiento);
+		Logger.print("Transformado correctamente.");
+		return apb;
 	}
 }
