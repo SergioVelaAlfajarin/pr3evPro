@@ -11,6 +11,7 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
@@ -122,7 +123,11 @@ public class EscritorXML {
 	}
 
 	private void escribeAparcamientosInvalidos(String rutaXmlInvalidos) throws XMLException {
-		compruebaSiExisteEnArchivo(rutaXmlInvalidos);
+		try{
+			compruebaSiExisteEnArchivo(rutaXmlInvalidos);
+		}catch(XMLException ex){
+
+		}
 
 
 		try (DataOutputStream dos = new DataOutputStream(
@@ -134,7 +139,6 @@ public class EscritorXML {
 						apb.getId(),
 						LocalDateTime.now()
 				);
-
 				dos.writeUTF(cadena);
 				dos.flush();
 			}
